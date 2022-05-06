@@ -1,0 +1,55 @@
+{
+	"name": "my-front-end",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "webpack-dev-server .",
+		"build": "webpack .",
+		"lint": "eslint . --fix --max-warnings=0",
+		"format": "prettier . --write",
+		"prepare": "husky install"
+	},
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Abdulkeza/my-front-end.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Abdulkeza/my-front-end/issues"
+	},
+	"homepage": "https://github.com/Abdulkeza/my-front-end#readme",
+	"devDependencies": {
+		"@babel/cli": "^7.17.10",
+		"@babel/core": "^7.17.10",
+		"@babel/preset-env": "^7.17.10",
+		"@babel/preset-react": "^7.16.7",
+		"babel-loader": "^8.2.5",
+		"eslint": "^8.15.0",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
+		"eslint-plugin-react": "^7.29.4",
+		"eslint-plugin-react-hooks": "^4.5.0",
+		"html-webpack-plugin": "^5.5.0",
+		"husky": "^7.0.4",
+		"lint-staged": "^12.4.1",
+		"prettier": "2.6.2",
+		"webpack": "^5.72.0",
+		"webpack-cli": "^4.9.2",
+		"webpack-dev-server": "^4.9.0"
+	},
+	"dependencies": {
+		"react": "^18.1.0",
+		"react-dom": "^18.1.0"
+	},
+	"lint-staged": {
+		"*.js": "npm run lint",
+		"*.{js,json,css,md,html}": "npm run format"
+	}
+}

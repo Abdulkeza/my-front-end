@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Simple tests for App Should test snapshoot 1`] = `ShallowWrapper {}`;

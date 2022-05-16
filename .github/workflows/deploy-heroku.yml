@@ -23,7 +23,7 @@ jobs:
         run: npm run coverage
 
   deploy:
-  # Avoid conflicts btn different jobs (group workflows having the name of "heroku_deployment")
+    # Avoid conflicts btn different jobs (group workflows having the name of "heroku_deployment")
     concurrency:
       group: heroku_deployment
       cancel-in-progress: false
@@ -38,5 +38,3 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: 'keza-code'
           heroku_email: ${{secrets.HEROKU_EMAIL}}
-
-      

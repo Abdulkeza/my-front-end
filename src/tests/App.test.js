@@ -30,7 +30,7 @@ describe('Testing App elements', () => {
 	});
 
 	test('Should find h1 elements', () => {
-		const h1 = screen.getByRole('heading', { level: 1 });
+		const h1 = screen.getByRole('heading', { level: 2 });
 		expect(h1).toBeInTheDocument();
 	});
 

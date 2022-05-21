@@ -1,3 +1,4 @@
+import { Button, Typography } from '@mui/material';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -13,23 +14,27 @@ function App() {
 
 	return (
 		<>
-			<h1>Hi here! This is Keza-codes back</h1>
+			<Typography variant="h2">Hi here! This is Keza-codes back</Typography>
+
 			<div>
 				<div>
-					<button type="button" onClick={() => dispatch(increment())}>
+					<Button variant="contained" onClick={() => dispatch(increment())}>
 						Increment
-					</button>
-					<h2>
+					</Button>
+
+					<Typography variant="h4">
 						<span>value: {count}</span>
-					</h2>
+					</Typography>
 
-					<button type="button" onClick={() => dispatch(decrement())}>
+					<Button variant="contained" onClick={() => dispatch(decrement())}>
 						Decrement
-					</button>
-
-					<button type="button" onClick={() => dispatch(incrementByAmount(10))}>
+					</Button>
+					<Button
+						variant="contained"
+						onClick={() => dispatch(incrementByAmount(10))}
+					>
 						Increment by 10
-					</button>
+					</Button>
 				</div>
 			</div>
 		</>

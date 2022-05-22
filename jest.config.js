@@ -19,7 +19,6 @@ const jestConfig = {
 	setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
 
 	// The test environment that will be used for testing
-	// testEnvironment: 'jsdom',
 
 	// The glob patterns Jest uses to detect test files
 	testMatch: ['**/__tests__/**/*.js?(x)', '**/?(*.)+(spec|test).js?(x)'],

@@ -25,12 +25,12 @@ describe('Testing App elements', () => {
 	});
 
 	test('Should find h1', () => {
-		const h1 = screen.getByText(/Hi here! This is Keza-codes back/i);
+		const h1 = screen.getByRole('heading', { level: 1 });
 		expect(h1).toBeInTheDocument();
 	});
 
 	test('Should find h1 elements', () => {
-		const h1 = screen.getByRole('heading', { level: 2 });
+		const h1 = screen.getByRole('heading', { level: 4 });
 		expect(h1).toBeInTheDocument();
 	});
 

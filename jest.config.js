@@ -37,6 +37,9 @@ const jestConfig = {
 	verbose: false,
 	collectCoverage: true,
 	testEnvironment: 'jsdom',
+	moduleNameMapper: {
+		'\\.(css|less)$': '<rootDir>/__mocks__/styleMock.js',
+	},
 };
 
 export default jestConfig;

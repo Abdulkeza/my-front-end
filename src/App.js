@@ -1,6 +1,6 @@
-import { Button, Typography } from '@mui/material';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import './app.css';
 import {
 	decrement,
 	increment,
@@ -14,27 +14,36 @@ function App() {
 
 	return (
 		<>
-			<Typography variant="h2">Hi here! This is Keza-codes back</Typography>
-
-			<div>
-				<div>
-					<Button variant="contained" onClick={() => dispatch(increment())}>
+			<h1 className="text-xl font-medium text-black-500">
+				{' '}
+				Hi here! This is Keza-codes{' '}
+			</h1>
+			<div className="p-0">
+				<div className="p-6 bg-slate-400">
+					<button
+						className="rounded-full  bg-primary p-2 text-white"
+						type="button"
+						onClick={() => dispatch(increment())}
+					>
 						Increment
-					</Button>
-
-					<Typography variant="h4">
+					</button>
+					<h4>
 						<span>value: {count}</span>
-					</Typography>
-
-					<Button variant="contained" onClick={() => dispatch(decrement())}>
+					</h4>
+					<button
+						className="rounded-md bg-primary p-2"
+						type="button"
+						onClick={() => dispatch(decrement())}
+					>
 						Decrement
-					</Button>
-					<Button
-						variant="contained"
+					</button>
+					<button
+						className="rounded-md p-2 bg-delete ml-4"
+						type="button"
 						onClick={() => dispatch(incrementByAmount(10))}
 					>
 						Increment by 10
-					</Button>
+					</button>
 				</div>
 			</div>
 		</>
